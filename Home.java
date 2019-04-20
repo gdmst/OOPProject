@@ -1,14 +1,8 @@
-import java.awt.EventQueue;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.awt.event.KeyEvent;
-import javax.swing.JOptionPane;
-import javax.swing.JFrame;
-import javax.swing.JMenu;
-import javax.swing.JMenuBar;
-import javax.swing.JMenuItem;
+import java.awt.*;
+import javax.swing.*;
 
 public class Home extends JFrame{ 
+    JButton menuBtn, orderBtn, vorderBtn, payBtn, conBtn, addMenuBtn;
     public static void main(String args[]){
         EventQueue.invokeLater(new Runnable() {
             public void run() {
@@ -23,9 +17,18 @@ public class Home extends JFrame{
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setTitle("Home");
 
-        /*MenuTop allMenu = new MenuTop();
-        setJMenuBar(allMenu);*/
+        MenuTop allMenu = new MenuTop();
+        setJMenuBar(allMenu);
 
+        JPanel MenuHome = new Jpanel(new GridLayout(3, 2));
+        add(MenuHome);
+        //add all btn of the menu to the other windows
+        menuBtn = new JButton("All Menu");
+        MenuHome.add(menuBtn);
+        orderBtn = new JButton("All Menu");
+        MenuHome.add(orderBtn);
+        menuBtn = new JButton("All Menu");
+        MenuHome.add(menuBtn);
     }
 
 }
