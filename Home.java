@@ -38,7 +38,11 @@ public class Home extends JFrame implements ActionListener{
     }
     
     public void actionPerformed(ActionEvent ev) {
-        if (ev.getSource() == menuBtn) {
+
+        if(ev.getSource() == orderBtn){
+            
+        }
+        if (ev.getSource() == addMenuBtn) {
             AddMenu a = new AddMenu();
             a.setVisible(true);
         }
