@@ -1,4 +1,6 @@
 import java.awt.*;
+import java.util.Scanner;
+
 import javax.swing.*;
 class AddMenu extends JFrame{
     public static void main(String args[]) {
@@ -14,4 +16,6 @@ class AddMenu extends JFrame{
         //setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setTitle("Add Menu Food");
     }
+
+
 }
